@@ -39,7 +39,7 @@ make clean    # Remove all build artifacts
 PES-VCS reads the author name from the `PES_AUTHOR` environment variable:
 
 ```bash
-export PES_AUTHOR="Your Name <PESXUG24CS042>"
+export PES_AUTHOR="G Ganikhasri <PES1UG24AM098>"
 ```
 
 If unset, it defaults to `"PES User <pes@localhost>"`.
@@ -375,8 +375,11 @@ The test program verifies:
 - Integrity checking (detects corrupted objects)
 
 **📸 Screenshot 1A:** Output of `./test_objects` showing all tests passing.
+<img width="895" height="160" alt="1" src="https://github.com/user-attachments/assets/89cb6761-0d6c-456c-9a98-602128cd70c2" />
+
 
 **📸 Screenshot 1B:** `find .pes/objects -type f` showing the sharded directory structure.
+<img width="737" height="110" alt="2" src="https://github.com/user-attachments/assets/15737540-23ee-4285-907f-3f7079fe9aa7" />
 
 ---
 
@@ -407,8 +410,12 @@ The test program verifies:
 - Deterministic serialization (same entries in any order → identical output)
 
 **📸 Screenshot 2A:** Output of `./test_tree` showing all tests passing.
+<img width="680" height="162" alt="Screenshot 2026-04-21 195941" src="https://github.com/user-attachments/assets/3c5c6051-f339-486e-b06b-9041c8f408f2" />
+
 
 **📸 Screenshot 2B:** Pick a tree object from `find .pes/objects -type f` and run `xxd .pes/objects/XX/YYY... | head -20` to show the raw binary format.
+<img width="1206" height="173" alt="Screenshot 2026-04-21 200126" src="https://github.com/user-attachments/assets/1911cb37-fa8f-41de-92cf-46e5f689180d" />
+
 
 ---
 
